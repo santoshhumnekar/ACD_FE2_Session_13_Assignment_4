@@ -1,0 +1,16 @@
+<table (click)="onSelect(emp)" *ngFor='let emp of employeeList' class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Details Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row"> {{emp.Id}} </th>
+            <td>{{emp.Name}}</td>
+            <td><a>{{emp.Details}}</a></td>
+        </tr>
+    </tbody>
+</table>
